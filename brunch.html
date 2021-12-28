@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<script type="text/javascript">
+    var slideIndex = 1;
+    window.onload = showSlides;
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length)
+        { slideIndex = 1 }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace("active", "");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += "active";
+    }
+</script>
+<style type="text/css">
+    *{box-sizing:border-box;
+    font-size: xx-large;
+    color: #333333;
+        font-weight: 400;
+        text-align: center;
+        font-family: Gadugi;
+    }
+.slideshow-container
+{
+    max-width:1020px;
+    position:relative;
+    margin:auto;
+    text-align: center;
+    top: 140px;
+    left: -26px;
+    height: 500px;
+        width:1016px;
+        
+    }
+.mySlides
+{
+    display:none;
+ 
+  }
+  .dot
+{
+    cursor:pointer;
+    height:15px;
+    width:16px;
+    margin:0 2px;
+    background-color:Gray;
+    border-radius:50%;
+    display:inline-block;
+    transition:background-color 0.6s ease;
+  
+}
+.active,.dot:hover
+{
+    background-color:#717171;
+}
+.prev,.next
+{
+   cursor:pointer;
+   position:absolute;
+   top:92%;
+   width:97px;
+   margin-top:-22px;
+   background-color:none;
+   padding:16px;
+   color:inherit;
+    font-weight:lighter;
+   font-size:70px;
+   transition:0.6s ease;
+   border-radius:0 3px 3px 0;
+  
+}
+.prev
+{
+    left:15px;
+        height: 81px;
+        right: 872px;
+    }
+.next
+{
+    right:696px;
+    border-radius:3px 0 0 3px;
+        height: 30px;
+    }
+
+.numbertext
+{color:Gray;
+ font-size:20px;
+ padding:8px 12px;
+ position:absolute;
+ 
+ 
+}
+
+.fade
+{
+    -webkit-animation-name:fade;
+    -webkit-animation-duration:1.5s;
+    animation-name:fade;
+    animation-duration:1.5s;
+}
+@-webkit-keyframes fade
+{
+    from {opacity:.4} to {opacity: 1}
+}
+@keyframes fade
+{
+     from {opacity:.4}to{opacity:1}
+    }
+    
+    
+    .style1
+    {
+        width: 100px;
+        height: 339px;
+    }
+    
+    
+    .style2
+    {
+        height: 339px;
+    }
+    
+    
+    </style>
+<div 
+        style="box-sizing: inherit; -webkit-font-smoothing: antialiased; background-color: rgb(255, 255, 255); padding-top: 3.1rem; transition: background-color 2s ease-in-out 0s;">
+        <div 
+                
+            style="background-position: center center; box-sizing: inherit; -webkit-font-smoothing: antialiased; height: 487px; margin-top:0px; background-image: url('images/food.jpg'); background-attachment: fixed;">
+                <div style="background-position: right center; box-sizing: inherit; -webkit-font-smoothing: antialiased; height: 485px; position: relative; background-repeat: no-repeat; top: -55px; left: 0px; background-attachment: fixed;">
+                    
+                    <div style="box-sizing: inherit; -webkit-font-smoothing: antialiased; -webkit-box-align: center; align-items: center; display: flex; height: 460px; margin-left: auto; margin-right: auto; max-width: 80%; padding-left: 2.4rem; padding-right: 2.4rem; position: relative; width: 1079.19px;">
+                        <div 
+                            style="box-sizing: inherit; -webkit-font-smoothing: antialiased; margin-bottom: auto; margin-top: auto; width: 1031.19px;">
+                            <h1 class="hero__heading" 
+                                
+                                
+                                
+                                style="box-sizing: inherit; -webkit-font-smoothing: antialiased; margin-top: 0px; margin-bottom: 0px; font-family: johnston-medium, Helvetica, Arial, sans-serif; font-weight: 700; text-transform: uppercase; font-size: 2.9rem; letter-spacing: 1rem; line-height: 3.5rem; color: #FFFFFF; text-align: center;">
+                                BRUNCH PLACE</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        
+            <div 
+                style="box-sizing: inherit; -webkit-font-smoothing: antialiased; width: 1188px; padding-right: 2.4rem; padding-left: 2.4rem; margin-right: auto; margin-left: auto; max-width: 118.8rem;">
+                <div
+                    
+                    style="box-sizing: inherit; -webkit-font-smoothing: antialiased; display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; height: 158px;">
+                    <div 
+                        
+                        
+                        
+                        
+                        
+                        style="box-sizing: inherit; -webkit-font-smoothing: antialiased; position: relative; width: 585px; padding-right: 15px; padding-left: 15px; -webkit-box-flex: 0; flex: 0 0 50%; max-width: 50%; margin-left: 292.5px; min-height: 1px; float: left; font-family: Gadugi; text-align: center; top: 64px; left: 0px; height: 113px; font-weight: 400; text-transform: capitalize; text-decoration: blink; color: #666666;">
+                        
+        
+                                Local products are featured in a cuisine that has its roots in tradition, but is prepared to experiment new trends and fashions.
+                        
+                    </div>
+                </div>
+            </div>
+        
+           
+          
+         
+   <br />
+   <br />
+      
+  
+         <div>
+   <div id="Div1"  class="slideshow-container" runat="server"  >
+<div  id="div2" class="mySlides  fade" runat="server" >
+<div class="numbertext">1/6</div>
+<img ID="i1"  style="Width:100%" height="550px" 
+        src="images/cola1_9806e2b01adbc1ba0f10537ad1f52c66.jpg"  />
+
+</div>
+<div id="div3"  class="mySlides fade" runat="server">
+<div class="numbertext">2/6</div>
+<img ID="i1"  style="Width:100%" height="550px" 
+        src="images/8.jpg"  />
+
+</div>
+<div   id="div4" class="mySlides fade" runat="server">
+<div class="numbertext">3/6</div>
+<img ID="i1"  style="Width:100%" height="550px" 
+        src="images/girlandthegoat_0814-6158_1540.jpg" />
+
+</div>
+<div  id="div5" class="mySlides  fade" runat="server" >
+<div class="numbertext">4/6</div>
+<img ID="i1"  style="Width:100%" height="550px" 
+        src="images/1.jpg"  />
+
+</div>
+<div  id="div6" class="mySlides  fade" runat="server" >
+<div class="numbertext">5/6</div>
+<img ID="i1"  style="Width:100%" height="550px" 
+        src="images/92720Juan_Coronado_-_carrots.jpg"  />
+
+</div>
+<div  id="div7" class="mySlides  fade" runat="server" >
+<div class="numbertext">6/6</div>
+<img ID="i1"  style="Width:100%" height="550px" 
+        src="images/Le_miel_de_Stephanie_parfume_au_thym_creme_de_marron_et_rafraichi_cassis_2.jpg" />
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+   
+   
+   </div>
+   <div class="container-fluid" 
+                
+            
+        
+        style="box-sizing: inherit; -webkit-font-smoothing: antialiased; width: 1188px; padding-right: 2.4rem; padding-left: 2.4rem; margin-right: auto; margin-left: auto; max-width: 118.8rem; text-align: center; height: 111px;">
+                <span style="color: rgb(102, 102, 102); font-family: Georgia; font-size: 30px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: 1px; orphans: 2; text-align: center; text-indent: 0px; text-transform: capitalize; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-variant: normal; text-decoration: blink;">
+                <br />
+                <br />
+  
+                <br />
+                    <br />
+                <br />
+ Four Season&#39;s understated dishes express the privilege  
+                    we feel in working so
+           
+                closely with the land, 
+                <br />
+                and the bounty it has to offer.<br />
+                <br />
+                <br />
+                
+                </span>
+            </div>
+
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div 
+            
+        
+        
+        
+        style="box-sizing: inherit; -webkit-font-smoothing: antialiased; border-top: 1px solid rgb(174, 154, 170); padding-top: 6.4rem; position: relative; top: -23px; left: 0px; height: 8px; margin-bottom: 0px; color: #666666;">
+    
+                            <h2 style="box-sizing: border-box; line-height: 0.85em; margin: 0px 0px 1em; font-weight: lighter; font-family: FreightDispProMedium-Italic; font-size: 2.8em; text-transform: uppercase; color: rgb(102, 102, 102); text-align: center; height: 90px;">
+                                GOOD&nbsp; TO&nbsp; KNOW</h2>
+            
+         </div>
+         <table align="center" cellspacing="90px">
+                                    <tr>
+                                        <td class="style1" height="300px">
+                                        
+                                            <h1 style:"width:100px;" 
+                                                style="text-align: center; width: 235px; color: #808080;">DressCode</h1>
+                                            <p style:"width:100px;">
+                                                <img ID="i1" 
+        src="images/icon-ff-dress.png" 
+                                                    meta:resourcekey="Image4Resource1" />
+                                            </p>
+                                            <p 
+                                            
+                                                
+                                                style="box-sizing: border-box; margin: 0px 0px 1.625em; color: #808080; text-align: center;">
+                                            Breakfast:&nbsp;<br style="box-sizing: border-box;" />
+                                            Summer - Casual<br style="box-sizing: border-box;" />
+                                            Winter - Ski casual&nbsp;</p>
+                                            &nbsp;</td>
+                                        <td valign="top" class="style1" height="300px">
+                                            <h1 style="color: #808080; text-align: center;">Menu</h1>
+                                            <img ID="i1" 
+        src="images/icon-ff-menu.png" 
+                                                meta:resourcekey="Image5Resource1" />
+                                            &nbsp;<br />
+                                            <br />
+                                            <a href="gallery/alta-langa-room-1.jpg"  ForeColor="Gray" Text="Menu"></a>
+                                        </td>
+                                        <td width="100px" valign="top" height="300px" class="style2">
+                                            <h1 style="color: #808080;">Cuisine
+                                            </h1>
+                                            &nbsp;<img ID="i1"  
+        src="images/icon-ff-dish.png" meta:resourcekey="Image6Resource1" />
+                                            <br />
+                                            <br />
+                                            <p 
+                                            
+                                                style="box-sizing: border-box; margin: 0px; color: #808080; text-align: center;">
+                                            French Haute Cuisine, International</p>
+                                        </td>
+                                    </tr>
+                                </table>
+<div style="background-position: center center; box-sizing: inherit; -webkit-font-smoothing: antialiased; width: 1244px; padding-right: 2.4rem; padding-left: 2.4rem; margin-right: auto; margin-left: auto; max-width: 120.9rem;
+ background-image: url('images/louge.jpg'); background-repeat: no-repeat; background-attachment: fixed;">
+                
+<div class="row" style="box-sizing: inherit; -webkit-font-smoothing: antialiased; display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; width: 870px;">
+                    
+<div class="info-banner__content-wrapper col-12 col-md-9 col-lg-4 offset-lg-0" style="box-sizing: inherit; -webkit-font-smoothing: antialiased; position: relative; width: 450px; padding-right: 15px; padding-left: 15px; -webkit-box-flex: 0; flex: 0 0 33.3333%; max-width: 33.3333%; margin-left: 0px; min-height: 1px; float: left; top: 0px; left: 0px;">
+                       
+ <div class="info-banner__content bg--white" style="box-sizing: inherit; -webkit-font-smoothing: antialiased; font-size: 1.3rem; font-family: johnston-medium, Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0.035rem; line-height: 2rem; background-color: rgb(255, 255, 255); overflow: hidden; padding-bottom: 3.4rem; padding-top: 6rem; position: relative; text-align: center; z-index: 2; top: 0px; left: 0px; width: 475px;">
+                            
+<div class="row" style="box-sizing: inherit; -webkit-font-smoothing: antialiased; display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px;">
+                                
+<div class="internal-content col-10 offset-1" style="box-sizing: inherit; -webkit-font-smoothing: antialiased; position: relative; width: 420px; padding-right: 15px; padding-left: 15px; flex: 0 0 83.3333%; max-width: 83.3333%; -webkit-box-flex: 0; margin-left: 32.4844px; top: 0px; left: 0px;">
+                                    
+<div class="internal-content__section" style="box-sizing: inherit; -webkit-font-smoothing: antialiased; margin-bottom: 2.4rem; padding-bottom: 2rem; position: relative; top: 19px; left: 0px; height: 726px; width: 436px;">
+                                        
+<h2 class="info-banner__title mf-push--mobile--small mf-push--tablet--small mf-push--desktop--small" 
+                                            style="box-sizing: inherit; -webkit-font-smoothing: antialiased; margin-top: 0px; margin-bottom: 0.5rem; font-size: 1.4rem; font-family: johnston-medium, Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0.35rem; line-height: 2.2rem; text-transform: uppercase;">
+                                            OPENING TIMES</h2>
+                                        
+<p style="box-sizing: inherit; -webkit-font-smoothing: antialiased; margin-top: 0px; margin-bottom: 1rem; display: block; font-size: 1.3rem; font-family: johnston-medium, Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0.035rem; line-height: 2rem;">
+                                            <strong style="box-sizing: inherit; -webkit-font-smoothing: antialiased; font-weight: 700; font-family: johnston-medium, Helvetica, Arial, sans-serif;">
+                                            Wednesday</strong></p>
+                                        
+<p style="box-sizing: inherit; -webkit-font-smoothing: antialiased; margin-top: 0px; margin-bottom: 1rem; display: block; font-size: large; font-family: Arial; font-weight: 700; letter-spacing: 0.035rem; line-height: 2rem;">
+                                            Breakfast&nbsp; 7.00 -10.00</p>
+                                       
+ <p style="box-sizing: inherit; -webkit-font-smoothing: antialiased; margin-top: 0px; margin-bottom: 1rem; display: block; font-size: 1.3rem; font-family: johnston-medium, Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0.035rem; line-height: 2rem;">
+                                            &nbsp;<strong style="box-sizing: inherit; -webkit-font-smoothing: antialiased; font-weight: 700; font-family: johnston-medium, Helvetica, Arial, sans-serif;">Thursday, Friday &amp; Saturday</strong></p>
+                                        
+<p style="box-sizing: inherit; -webkit-font-smoothing: antialiased; margin-top: 0px; margin-bottom: 1rem; display: block; font-size: 1.3rem; font-family: johnston-medium, Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0.035rem; line-height: 2rem;">
+                                            Brunch 12.00-15.00</p>
+                                        
+<p style="box-sizing: inherit; -webkit-font-smoothing: antialiased; margin-top: 0px; margin-bottom: 1rem; display: block; font-size: 1.3rem; font-family: johnston-medium, Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0.035rem; line-height: 2rem;">
+                                            &nbsp;<strong style="box-sizing: inherit; -webkit-font-smoothing: antialiased; font-weight: 700; font-family: johnston-medium, Helvetica, Arial, sans-serif;">Sunday&nbsp;</strong></p>
+                                       
+ <p style="box-sizing: inherit; -webkit-font-smoothing: antialiased; margin-top: 0px; margin-bottom: 1rem; display: block; font-size: 1.3rem; font-family: johnston-medium, Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0.035rem; line-height: 2rem;">
+                                            Lunch 12.00 - 15.00</p>
+                                    </div>
+                                    <div class="internal-content__section internal-content__section--last" 
+                                        style="box-sizing: inherit; -webkit-font-smoothing: antialiased; margin-bottom: 2.4rem; padding-bottom: 0px; position: relative;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+                            <br />
+                            <br />
+                        
+            
+        
+        
+  
+    
+    
+</asp:Content>
+
